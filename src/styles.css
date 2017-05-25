@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+html, body {
+	clear: both;
+	height: 100%;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+}
+
+img {
+	max-width: 100%;
+}
+
+.no-margin {
+	margin: 0!important;
+}
+
+.no-padding {
+	padding: 0!important;
+}
+
+.layout-row {
+	display: flex;
+	flex-direction: row;
+}
+
+.layout-align-center-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-30 {
+	flex: 0 1 30%;
+	max-width: 30%;
+}
+
+.flex-70 {
+	flex: 0 1 70%;
+	max-width: 70%;
+}
+
+.flex-auto {
+	flex: 1 0 auto;
+	width: auto;
+}
+
+.flex-nogrow {
+	flex: 0 1 auto;
+	width: auto;
+}
+
+.md-content {
+	display: block;
+	position: relative;
+}
+
+.layout-fill {
+	height: 100%;
+	width: 100%;
+}

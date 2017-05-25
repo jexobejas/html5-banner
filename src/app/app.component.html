@@ -1,3 +1,14 @@
-<h1>
-  {{title}}
-</h1>
+<div class="md-content layout-fill">
+	<md-sidenav-container class="example-container layout-fill">
+		<md-sidenav #sidenav class="side-nav" mode="side" opened="true">
+			<banner-menus></banner-menus>
+		</md-sidenav>
+
+		<div class="md-content layout-fill">
+			<selected-banner></selected-banner>
+		</div>
+		<div class="logo">
+			<img src="./../assets/images/logo.png">
+		</div>
+	</md-sidenav-container>
+</div>
