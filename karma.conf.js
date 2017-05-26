@@ -20,6 +20,16 @@ module.exports = function (config) {
     mime: {
       'text/x-typescript': ['ts','tsx']
     },
+    coverageIstanbulReporter: {
+      reports: [ 'html', 'lcovonly' ],
+      fixWebpackSourcePaths: true
+    },
+    angularCli: {
+      environment: 'dev'
+    },
+    reporters: config.angularCli && config.angularCli.codeCoverage
+              ? ['progress', 'coverage-istanbul']
+              : ['progress', 'kjhtml'],
     remapIstanbulReporter: {
       reports: {
         html: 'coverage',

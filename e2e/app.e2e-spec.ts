@@ -1,6 +1,7 @@
 import { Html5BannersPage } from './app.po';
 
 describe('html5-banners App', function() {
+
   let page: Html5BannersPage;
 
   beforeEach(() => {
