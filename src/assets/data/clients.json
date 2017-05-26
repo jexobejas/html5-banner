@@ -1,0 +1,16 @@
+[
+	{
+		"client": "Investor's Group",
+		"project_name": "Spring Banners",
+		"banners": [
+			{
+				"size": {
+					"width": "250",
+					"height": "300",
+					"lang": "en",
+					"name": "en_garbage_300x250",
+				}
+			}
+		]
+	}
+]

@@ -1,5 +1,4 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import {MdSidenavModule} from '@angular/material';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +6,7 @@ import {MdSidenavModule} from '@angular/material';
   styleUrls: ['./app.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
+
 export class AppComponent {
   title = 'app works!';
 }

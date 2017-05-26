@@ -10,6 +10,8 @@ import { AppComponent } from './app.component';
 import { SelectedBannerComponent } from './selected-banner/selected-banner.component';
 import { BannerMenusComponent } from './banner-menus/banner-menus.component';
 
+import { BannersService } from './services/banners.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,7 +28,7 @@ import { BannerMenusComponent } from './banner-menus/banner-menus.component';
   exports: [
     MdButtonModule, MdCheckboxModule, MdSidenavModule, MdToolbarModule
   ],
-  providers: [],
+  providers: [BannersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
