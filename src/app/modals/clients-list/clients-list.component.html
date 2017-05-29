@@ -1,0 +1,29 @@
+<div class="layout-fill layout-row layout-align-center-center">
+	<div class="md-content flex-auto">
+		<div class="flex-100">
+			<div class="layout-row layout-align-center-center">
+				<md-select class="flex-auto md-block" floatPlaceholder="always" placeholder="Select clients" [(ngModel)]="selectedClient" (change)="onChange($event)">
+					<md-option *ngFor="let client of clients" [value]="client">
+						{{ client.name }}
+					</md-option>
+				</md-select>
+			</div>
+			<br/>
+			<br>
+			<br>
+			<div class="layout-row layout-align-center-center">
+				<md-select class="flex-auto" floatPlaceholder="always" [disabled]="!selectedClient.projects" placeholder="Select project" [(ngModel)]="selectedProject" (change)="onChange($event)">
+					<md-option *ngFor="let client of selectedClient.projects" [value]="client">
+						{{ client.name }}
+					</md-option>
+				</md-select>
+			</div>
+			<br>
+			<br>
+			<br>
+			<div class="layout-row layout-align-center-center">
+				<a href="/" md-button md-raised-button [disabled]="!selectedProject">Go!</a>
+			</div>
+		</div>
+	</div>
+</div>
