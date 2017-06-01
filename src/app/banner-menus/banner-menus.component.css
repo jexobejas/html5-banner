@@ -42,6 +42,7 @@
 .side-nav li>a.is-selected, .side-nav li>a:focus, .side-nav li>a:hover {
 	background: #fafafa;
 	color: #00bcd4;
+	font-weight: 600;
 }
 
 .side-nav li>a {

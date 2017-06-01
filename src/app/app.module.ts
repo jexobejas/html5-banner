@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {MdSelectModule, MdButtonModule, MdDialogModule, MdCheckboxModule, MdIconModule, MdSidenavModule, MdToolbarModule} from '@angular/material';
 
+import { routes } from './app.routes';
 import { AppComponent } from './app.component';
 import { SelectedBannerComponent } from './selected-banner/selected-banner.component';
 import { BannerMenusComponent } from './banner-menus/banner-menus.component';
@@ -26,7 +27,8 @@ import { ClientsListComponent } from './modals/clients-list/clients-list.compone
 		FormsModule,
 		HttpModule,
 		BrowserAnimationsModule,
-		MdSelectModule, MdButtonModule, MdDialogModule, MdCheckboxModule, MdSidenavModule, MdToolbarModule
+		MdSelectModule, MdButtonModule, MdDialogModule, MdCheckboxModule, MdSidenavModule, MdToolbarModule,
+		routes
 	],
 	exports: [
 		MdSelectModule, MdButtonModule, MdDialogModule, MdCheckboxModule, MdSidenavModule, MdToolbarModule

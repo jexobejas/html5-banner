@@ -1,12 +1,20 @@
 [{
 	"name": "Investor's Group",
+	"code": "ig",
 	"projects": [
 		{
 			"name": "Spring Banners",
+			"code": "spring_banners",
 			"banners": [
 				{
 					"lang": "en",
 					"name": "en_garbage_300x250",
+					"width": "250",
+					"height": "300"
+				},
+				{
+					"lang": "fr",
+					"name": "fr_garbage_300x250",
 					"width": "250",
 					"height": "300"
 				}

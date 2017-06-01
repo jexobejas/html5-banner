@@ -1,6 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-
-import { BannersService } from '../services/banners.service';
+import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 
 @Component({
 	selector: 'banner-menus',
@@ -10,14 +8,12 @@ import { BannersService } from '../services/banners.service';
 })
 
 export class BannerMenusComponent implements OnInit {
-	clients = [];
+	constructor() { }
 
-	constructor(private _bannersService: BannersService) { }
+	@Input() client = null;
+	@Input() selectedBanner = null;
 
 	ngOnInit() {
-		this._bannersService.getClients()
-			.subscribe(resClientsData => this.clients = resClientsData);
-
 		
 	}
 

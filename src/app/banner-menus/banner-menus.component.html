@@ -2,13 +2,12 @@
 	<nav class="banner-menus">
 		<ul>
 			<li class="header">
-				<h3 class="no-margin">NAVIGATION</h3>
+				<h3 class="no-margin">NAVIGATION ({{client.project.name}})</h3>
 			</li>
-			<li>
-				<a href="asdf.com">test</a>
-			</li>
-			<li>
-				<a href="asdf.com">test</a>
+			<li *ngFor="let banner of client.project.banners">
+				<a [routerLink]="['/client', client.code, client.project.code, banner.name]" 
+					[ngClass]="{'is-selected' : selectedBanner.name == banner.name}"
+					(click)="selectedBanner = banner">{{banner.name}}</a>
 			</li>
 		</ul>
 	</nav>

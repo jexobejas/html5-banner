@@ -2,7 +2,7 @@
 	<div class="md-content flex-auto">
 		<div class="flex-100">
 			<div class="layout-row layout-align-center-center">
-				<md-select class="flex-auto md-block" floatPlaceholder="always" placeholder="Select clients" [(ngModel)]="selectedClient" (change)="onChange($event)">
+				<md-select class="flex-auto md-block" floatPlaceholder="always" placeholder="Select clients" [(ngModel)]="selectedClient">
 					<md-option *ngFor="let client of clients" [value]="client">
 						{{ client.name }}
 					</md-option>
@@ -12,9 +12,19 @@
 			<br>
 			<br>
 			<div class="layout-row layout-align-center-center">
-				<md-select class="flex-auto" floatPlaceholder="always" [disabled]="!selectedClient.projects" placeholder="Select project" [(ngModel)]="selectedProject" (change)="onChange($event)">
+				<md-select class="flex-auto" floatPlaceholder="always" [disabled]="!selectedClient.projects" placeholder="Select project" [(ngModel)]="selectedProject">
 					<md-option *ngFor="let client of selectedClient.projects" [value]="client">
 						{{ client.name }}
+					</md-option>
+				</md-select>
+			</div>
+			<br/>
+			<br>
+			<br>
+			<div class="layout-row layout-align-center-center">
+				<md-select class="flex-auto" floatPlaceholder="always" [disabled]="!selectedProject.banners" placeholder="Select banner" [(ngModel)]="selectedBanner">
+					<md-option *ngFor="let banner of selectedProject.banners" [value]="banner">
+						{{ banner.name }}
 					</md-option>
 				</md-select>
 			</div>
@@ -22,7 +32,7 @@
 			<br>
 			<br>
 			<div class="layout-row layout-align-center-center">
-				<a href="/" md-button md-raised-button [disabled]="!selectedProject">Go!</a>
+				<button md-button md-raised-button (click)="goTo()" [disabled]="!selectedBanner.name">Go!</button>
 			</div>
 		</div>
 	</div>
