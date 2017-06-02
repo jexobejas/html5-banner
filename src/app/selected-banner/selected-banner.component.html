@@ -1,3 +1,16 @@
-<p>
-  selected-banner works!
-</p>
+<div class="md-content layout-fill">
+	<md-sidenav-container class="example-container layout-fill">
+		<md-sidenav #sidenav class="side-nav" mode="side" opened="{{client.name || false}}">
+			<banner-menus [project]="project" [selectedBanner]="banner" [client]="client"></banner-menus>
+		</md-sidenav>
+
+		<div class="md-content layout-fill">
+			<div class="iframe-container">
+				<iframe [src]="banner_url" height="{{banner.height}}" width="{{banner.width}}" border="0"></iframe>
+			</div>
+		</div>
+		<div class="logo">
+			<img src="./../assets/images/logo.png">
+		</div>
+	</md-sidenav-container>
+</div>

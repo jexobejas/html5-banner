@@ -5,10 +5,6 @@ import { AppComponent } from './app.component';
 import { SelectedBannerComponent } from './selected-banner/selected-banner.component';
 
 export const router: Routes = [
-    {
-    	path: '***', 
-    	redirectTo: '/'
-    },
     { 
     	path: 'client/:client/:project/:banner', 
     	component: SelectedBannerComponent, 

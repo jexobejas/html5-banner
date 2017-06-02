@@ -1,0 +1,10 @@
+.iframe-container {
+	display: flex;
+    width: 100%;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.iframe-container iframe {
+	border: 0;
+}

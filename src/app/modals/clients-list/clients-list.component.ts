@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { MdDialog, MdDialogRef} from '@angular/material';
+import * as _ from 'underscore';
 
 import { BannersService } from '../../services/banners.service';
 
@@ -21,8 +22,15 @@ export class ClientsListComponent implements OnInit  {
 				private router: Router) {}
 
 	ngOnInit() {
-		this._bannersService.getClients()
-			.subscribe(resClientsData => this.clients = resClientsData);
+		this.clients = this._bannersService.getClients();
+
+		if (_.isEmpty(this.clients)) {
+			this._bannersService.fetchClients()
+				.subscribe(resClientsData => {
+					this.clients = this._bannersService.getClients();
+				});
+		}
+		
 	}
 
 	goTo() {
@@ -32,13 +40,7 @@ export class ClientsListComponent implements OnInit  {
 
 		if (banner.name) {
 			this.router.navigate(['/client', client.code, project.code, banner.name]);
+			this.dialogRef.close();
 		}
-
-		this.dialogRef.close({
-			name: client.name,
-			code: client.code,
-			project: project,
-			selectedBanner: banner
-		});
 	}
 }

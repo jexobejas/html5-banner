@@ -10,8 +10,9 @@ import { Component, OnInit, ViewEncapsulation, Input } from '@angular/core';
 export class BannerMenusComponent implements OnInit {
 	constructor() { }
 
-	@Input() client = null;
+	@Input() project = null;
 	@Input() selectedBanner = null;
+	@Input() client = null;
 
 	ngOnInit() {
 		

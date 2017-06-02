@@ -1,14 +1,1 @@
-<div class="md-content layout-fill">
-	<md-sidenav-container class="example-container layout-fill">
-		<md-sidenav #sidenav class="side-nav" mode="side" opened="{{client.name || false}}">
-			<banner-menus [client]="client" [selectedBanner]="banner"></banner-menus>
-		</md-sidenav>
-
-		<div class="md-content layout-fill">
-			<router-outlet></router-outlet>
-		</div>
-		<div class="logo">
-			<img src="./../assets/images/logo.png">
-		</div>
-	</md-sidenav-container>
-</div>
+<router-outlet></router-outlet>
