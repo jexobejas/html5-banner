@@ -75,3 +75,16 @@
 	max-width: 100px;
 	padding: 15px;
 }
+
+.banner-menus .options {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+}
+
+.banner-menus .options button {
+	margin-top: 10px;
+	width: 100%;
+}

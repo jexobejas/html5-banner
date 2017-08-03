@@ -10,5 +10,11 @@
 					(click)="selectedBanner = banner">{{banner.name}}</a>
 			</li>
 		</ul>
+		<div class="options">
+			<div>
+				<button md-button md-raised-button (click)="upload()" class="md-primary">Upload Banner</button>
+				<button md-button (click)="download()">Download All Banners</button>
+			</div>
+		</div>
 	</nav>
 </div>

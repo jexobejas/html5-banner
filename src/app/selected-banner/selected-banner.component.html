@@ -1,4 +1,4 @@
-<div class="md-content layout-fill">
+<div class="md-content layout-fill" *ngIf="client">
 	<md-sidenav-container class="example-container layout-fill">
 		<md-sidenav #sidenav class="side-nav" mode="side" opened="{{client.name || false}}">
 			<banner-menus [project]="project" [selectedBanner]="banner" [client]="client"></banner-menus>
@@ -6,8 +6,13 @@
 
 		<div class="md-content layout-fill">
 			<div class="iframe-container">
-				<iframe [src]="banner_url" height="{{banner.height}}" width="{{banner.width}}" border="0"></iframe>
+				<iframe [src]="banner_url" height="{{banner.height}}" width="{{banner.width}}" id="banner" border="0"></iframe>
+				<div class="options">
+					<button class="md-primary" md-button md-raised-button (click)="upload()">Change</button>
+					<button md-button md-raised-button (click)="download(client, project, banner)">Download</button>
+				</div>
 			</div>
+			<div id="canvas"></div>
 		</div>
 		<div class="logo">
 			<img src="./../assets/images/logo.png">

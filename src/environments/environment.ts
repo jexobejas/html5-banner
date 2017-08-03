@@ -5,5 +5,6 @@
 
 export const environment = {
   production: false,
-  banners_src: '/banners'
+  banners_src: '/banners',
+  api_url: 'http://api-html5-banners.dev:8000/api'
 };

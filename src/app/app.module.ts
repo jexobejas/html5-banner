@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
+import { APP_BASE_HREF } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import {MdSelectModule, MdButtonModule, MdDialogModule, MdCheckboxModule, MdIconModule, MdSidenavModule, MdToolbarModule} from '@angular/material';
@@ -14,13 +15,15 @@ import { BannerMenusComponent } from './banner-menus/banner-menus.component';
 import { BannersService } from './services/banners.service';
 
 import { ClientsListComponent } from './modals/clients-list/clients-list.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
 		SelectedBannerComponent,
 		BannerMenusComponent,
-		ClientsListComponent
+		ClientsListComponent,
+		DashboardComponent
 	],
 	imports: [
 		BrowserModule,
@@ -36,7 +39,7 @@ import { ClientsListComponent } from './modals/clients-list/clients-list.compone
 	entryComponents: [
 		ClientsListComponent
 	],
-	providers: [BannersService],
+	providers: [BannersService, {provide: APP_BASE_HREF, useValue: '/app'}],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }

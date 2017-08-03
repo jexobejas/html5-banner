@@ -26,7 +26,8 @@
         "styles.css"
       ],
       "scripts": [
-        "../node_modules/underscore/underscore-min.js"
+        "../node_modules/underscore/underscore-min.js",
+        "../node_modules/rasterizeHTML/dist/rasterizeHTML.js"
       ],
       "environmentSource": "environments/environment.ts",
       "environments": {
@@ -59,5 +60,10 @@
   "defaults": {
     "styleExt": "css",
     "component": {}
+  },
+  "webpack": {
+    "development": {
+      "config": "webpack.config.js"
+    }
   }
 }
