@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import * as _ from 'underscore';
@@ -8,6 +8,7 @@ import * as $ from 'jquery';
 import { BannersService } from './../services/banners.service';
 
 @Component({
+	encapsulation: ViewEncapsulation.None,
 	selector: 'selected-banner',
 	templateUrl: './selected-banner.component.html',
 	styleUrls: ['./selected-banner.component.css']

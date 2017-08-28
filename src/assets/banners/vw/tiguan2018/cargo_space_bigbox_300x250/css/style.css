@@ -1,0 +1,110 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.super {
+    text-align: center;
+    width: 300px;
+    margin-top: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.super img {
+    width: initial!important;
+    height: initial!important;
+}
+
+#super-1,
+#super-2 {
+    margin-left: 300px;
+}
+
+#super-3,
+#super-4 {
+    margin-top: 100px;
+    margin-left: 300px;
+}
+
+#super-5 {
+    margin-top: 30px;
+    opacity: 0;
+}
+
+#super-6 {
+    margin-top: 58px;
+    opacity: 0;
+    font-weight: 300;
+}
+
+.container {
+    display: inline-block;
+    width: 298px;
+    height: 248px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #000000;
+    background: url(../images/bg.jpg) no-repeat;
+}
+
+#suitcases {
+    margin-top: 100px;
+    position: relative;
+    width: 100%;
+}
+
+.suitcase {
+    width: 120px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.suitcase.behind {
+    opacity: 0;
+}
+
+.second-row {
+    top: 5px;
+}
+
+.last-row {
+    top: 10px;
+}
+
+#car {
+    display: block;
+    width: 30px;
+    opacity: 0;
+    position: relative;
+    top: 25px;
+}
+
+#cta {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 12px;
+    margin-left: 10px;
+    opacity: 0;
+}
+
+#vw-logo {
+    position: absolute;
+    bottom: 12px;
+    right: 0;
+    margin-right: 10px;
+}

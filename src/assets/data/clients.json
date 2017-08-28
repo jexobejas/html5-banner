@@ -11,10 +11,76 @@
 					"name": "en_garbage_300x250",
 					"width": "300",
 					"height": "250"
+				}
+			]
+		}
+	] 
+},
+{
+	"name": "CPA",
+	"code": "cpa",
+	"projects": [
+		{
+			"name": "Acap",
+			"code": "acaf",
+			"banners": [
+				{
+					"lang": "en",
+					"name": "en_seek_300x250",
+					"width": "300",
+					"height": "250"
 				},
 				{
-					"lang": "fr",
-					"name": "fr_garbage_300x250",
+					"lang": "en",
+					"name": "en_seek_300x600",
+					"width": "300",
+					"height": "600"
+				},
+				{
+					"lang": "en",
+					"name": "en_seek_728x90",
+					"width": "728x90",
+					"height": "90"
+				},
+				{
+					"lang": "en",
+					"name": "en_demand_300x250",
+					"width": "300",
+					"height": "250"
+				},
+				{
+					"lang": "en",
+					"name": "en_demand_300x600",
+					"width": "300",
+					"height": "600"
+				},
+				{
+					"lang": "en",
+					"name": "en_demand_728x90",
+					"width": "728x90",
+					"height": "90"
+				}
+			]
+		}
+	] 
+},
+{
+	"name": "VW",
+	"code": "vw",
+	"projects": [
+		{
+			"name": "Tiguan 2018",
+			"code": "tiguan2018",
+			"banners": [
+				{
+					"lang": "en",
+					"name": "3rd_row_seat_bigbox_300x250",
+					"width": "300",
+					"height": "250"
+				},
+				{
+					"lang": "en",
+					"name": "cargo_space_bigbox_300x250",
 					"width": "300",
 					"height": "250"
 				}

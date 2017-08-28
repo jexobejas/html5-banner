@@ -6,7 +6,7 @@
 
 		<div class="md-content layout-fill">
 			<div class="iframe-container">
-				<iframe [src]="banner_url" height="{{banner.height}}" width="{{banner.width}}" id="banner" border="0"></iframe>
+				<object [data]="banner_url" height="{{banner.height}}" width="{{banner.width}}" id="banner" border="0"></object>
 				<div class="options">
 					<button class="md-primary" md-button md-raised-button (click)="upload()">Change</button>
 					<button md-button md-raised-button (click)="download(client, project, banner)">Download</button>
