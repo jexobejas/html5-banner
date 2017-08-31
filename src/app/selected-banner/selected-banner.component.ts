@@ -1,11 +1,13 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
+import { MdDialog, MdDialogRef } from '@angular/material';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import * as _ from 'underscore';
 import * as html2canvas from 'html2canvas';
 import * as $ from 'jquery';
 
 import { BannersService } from './../services/banners.service';
+import { BannerPreviewComponent } from './../modals/banner-preview/banner-preview.component';
 
 @Component({
 	encapsulation: ViewEncapsulation.None,
@@ -14,10 +16,12 @@ import { BannersService } from './../services/banners.service';
 	styleUrls: ['./selected-banner.component.css']
 })
 export class SelectedBannerComponent implements OnInit {
-
+	orig_banner_url = null;
 	banner_url: SafeResourceUrl = null;
+	banner_preview = null;
 	banner: object = {
-		name: null
+		name: null,
+		preview: null
 	};
 	project: object = {
 		name: null,
@@ -29,7 +33,8 @@ export class SelectedBannerComponent implements OnInit {
 
 	constructor(private route: ActivatedRoute,
 				public sanitizer:DomSanitizer,
-				private _bannersService: BannersService) {}
+				private _bannersService: BannersService,
+				public dialog: MdDialog) {}
 
 	ngOnInit() {
 		this.route.params
@@ -41,6 +46,7 @@ export class SelectedBannerComponent implements OnInit {
 				var banner_name = params.banner;
 				var url = './assets/banners/' + params.client + '/' + params.project + '/' + params.banner + '/index.html';
 
+				this.orig_banner_url = url;
 				this.banner_url = this.sanitizer.bypassSecurityTrustResourceUrl(url);
 
 				this.prepareData(client_code, project_code, banner_name);
@@ -50,9 +56,25 @@ export class SelectedBannerComponent implements OnInit {
 						.fetchClients()
 						.subscribe(resClientsData => this.prepareData(client_code, project_code, banner_name));
 				}
-				
-				
+
+				this._bannersService
+					.getBannerPreview(client_code, project_code, banner_name)
+					.subscribe((result) =>  {
+						this.banner_preview = result.data;
+					});
 			});
+	}
+
+	showPreview() {
+		let dialogRef = this.dialog
+
+		dialogRef.open(BannerPreviewComponent, {
+			disableClose: true,
+			data: {
+				previewImg: this.banner_preview
+			}
+		})
+		.afterClosed();
 	}
 
 	prepareData(client_code, project_code, banner_name) {
@@ -62,22 +84,29 @@ export class SelectedBannerComponent implements OnInit {
 	}
 
 	download(client, project, banner) {
-		var iframe = null;
+		console.log('download')
+	}
 
-		iframe = $('#banner').contents()[0];
-		var base = document.createElement('base');
-		base.href = `/assets/banners/ig/spring_banners/fr_garbage_300x250/`;
+	refreshBanner() {
+		let banner_url = this.orig_banner_url + '?' + Math.floor((Math.random() * 100) + 1);
 
-		$(iframe.head).prepend(base);
-		html2canvas(iframe.body, {useCORS: true, letterRendering: true}).then(function(canvas) {
-		     var img = canvas.toDataURL()
-		      //  console.log(img);
-		        window.open(img);
-		});
+		this.banner_url = this.sanitizer.bypassSecurityTrustResourceUrl(banner_url);
+	}
 
-		// this._bannersService.downloadBanner({test: 1})
-		// 	.subscribe(result => {
-		// 		console.log(result);
-		// 	});
+	getCompressBanner(client, project, banner) {
+		var client_code = client.code;
+		var project_code = project.code;
+		var banner_name = banner.name;
+
+		this._bannersService
+			.getCompressBanner(client_code, project_code, banner_name)
+			.subscribe((result) =>  {
+				var a = document.createElement('a');
+				a.href = result.data;
+				a.download = banner_name;
+				document.body.appendChild(a);
+				a.click();
+				a.remove();
+			});
 	}
 }

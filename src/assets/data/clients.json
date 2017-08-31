@@ -83,6 +83,18 @@
 					"name": "cargo_space_bigbox_300x250",
 					"width": "300",
 					"height": "250"
+				},
+				{
+					"lang": "en",
+					"name": "3rd_row_seat_bigbox_900x750",
+					"width": "900",
+					"height": "750"
+				},
+				{
+					"lang": "en",
+					"name": "cargo_space_bigbox_900x750",
+					"width": "900",
+					"height": "750"
 				}
 			]
 		}

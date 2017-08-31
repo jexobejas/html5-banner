@@ -17,4 +17,22 @@ router.post('/downloadBanner', (req, res) => {
 	controller(params, res);
 });
 
+/* POST generate screenshot. */
+router.post('/bannerPreview', (req, res) => {
+	var params = req.body;
+
+	var controller = helper.getController('bannerPreview', 'post');
+
+	controller(params, res);
+});
+
+/* POST compress banner. */
+router.post('/compressBanner', (req, res) => {
+	var params = req.body;
+
+	var controller = helper.getController('compressBanner', 'post');
+
+	controller(params, res);
+});
+
 module.exports = router;

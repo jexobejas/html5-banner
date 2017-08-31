@@ -29,6 +29,26 @@ export class BannersService {
 		return this.clients;
 	}
 
+	getBannerPreview(client_code: string, project_code: string, banner_name: string): Observable<any> {
+		let headers = new Headers({ 'Content-Type': 'application/json' });
+    	let options = new RequestOptions({ headers: headers });
+  		let params = JSON.stringify({client_code: client_code, project_code: project_code, banner_name: banner_name});
+  		let url = this._apiUrl + '/bannerPreview';
+
+		return this._http.post(url, params, options)
+					.map((response: Response) => response.json());
+	}
+
+	getCompressBanner(client_code: string, project_code: string, banner_name: string): Observable<any> {
+		let headers = new Headers({ 'Content-Type': 'application/json' });
+    	let options = new RequestOptions({ headers: headers });
+  		let params = JSON.stringify({client_code: client_code, project_code: project_code, banner_name: banner_name});
+  		let url = this._apiUrl + '/compressBanner';
+
+		return this._http.post(url, params, options)
+					.map((response: Response) => response.json());
+	}
+
 	getBanner(client_code: string, project_code: string, banner_name: string): object {
 		var clients = this.getClients();
 

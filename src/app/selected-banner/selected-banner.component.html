@@ -6,10 +6,30 @@
 
 		<div class="md-content layout-fill">
 			<div class="iframe-container">
-				<object [data]="banner_url" height="{{banner.height}}" width="{{banner.width}}" id="banner" border="0"></object>
 				<div class="options">
-					<button class="md-primary" md-button md-raised-button (click)="upload()">Change</button>
-					<button md-button md-raised-button (click)="download(client, project, banner)">Download</button>
+					<div>
+						<button class="md-primary" md-icon-button md-raised-button (click)="refreshBanner()" mdTooltip="Refresh Banner" mdTooltipPosition="left">
+							<i class="material-icons">refresh</i>
+						</button>
+					</div>
+					<div>
+						<button class="md-primary" md-icon-button md-raised-button (click)="upload()" mdTooltip="Change Banner" mdTooltipPosition="left">
+							<i class="material-icons">file_upload</i>
+						</button>
+					</div>
+					<div>
+						<button class="md-primary" md-icon-button md-raised-button (click)="getCompressBanner(client, project, banner)" mdTooltip="Download Banner" mdTooltipPosition="left">
+							<i class="material-icons">get_app</i>
+						</button>
+					</div>
+					<div>
+						<button class="md-primary" md-icon-button md-raised-button (click)="showPreview()" mdTooltip="Show Preview" mdTooltipPosition="left">
+							<i class="material-icons">image</i>
+						</button>
+					</div>
+				</div>
+				<div>
+					<object [data]="banner_url" height="{{banner.height}}" width="{{banner.width}}" id="banner" border="0"></object>
 				</div>
 			</div>
 			<div id="canvas"></div>

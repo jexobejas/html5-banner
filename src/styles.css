@@ -16,6 +16,7 @@ img {
 	font-weight: bold!important;
 }
 
+.mat-icon-button.md-primary,
 .mat-button.md-primary {
 	background-color: #428bca;
 	color: #fff;
@@ -57,6 +58,11 @@ img {
 .layout-align-center-center {
 	justify-content: center;
 	align-items: center;
+}
+
+.layout-align-start-center {
+	align-items: flex-start;
+	justify-content: center;
 }
 
 .flex-30 {
