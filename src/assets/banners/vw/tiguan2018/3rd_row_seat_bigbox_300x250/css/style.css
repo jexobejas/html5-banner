@@ -2,6 +2,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     color: #ffffff;
+    overflow: hidden;
 }
 
 body:hover {
@@ -13,7 +14,7 @@ body:hover {
     margin-top: 50px;
     position: absolute;
     font-size: 25px;
-    font-weight: bold;
+    font-weight: 700;
     width: 300px;
 }
 
@@ -34,14 +35,14 @@ body:hover {
 }
 
 .small {
-    font-size: 12px;
+    font-size: 14px;
     font-weight: normal;
 }
 
 #super-5 {
     margin-top: 30px;
     opacity: 0;
-    font-size: 20px;
+    font-size: 22px;
 }
 
 #super-6 {
@@ -67,7 +68,6 @@ body:hover {
 }
 
 .seat {
-    width: 180px;
     position: absolute;
     left: 0;
     right: 0;
@@ -98,7 +98,7 @@ body:hover {
 #cta {
     position: relative;
     top: 95px;
-    padding: 5px 15px;
+    padding: 5px 20px;
     left: 0;
     display: inline-block;
     right: 0;
@@ -107,8 +107,8 @@ body:hover {
     margin-left: 10px;
     opacity: 0;
     font-size: 12px;
-    border-radius: 28px;
-    font-weight: bold;
+    border-radius: 50px;
+    font-weight: 600;
 }
 
 #vw-logo {

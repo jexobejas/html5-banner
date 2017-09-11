@@ -174,19 +174,18 @@ sup{
 
 #scene1 #header {
   background-color: #ee6f1d;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
   position: absolute;
   width: 100%;
-  text-indent: 8px;
-  padding: 4px 0;
+  padding: 4px 8px;
   bottom: 26px;
   color: #fff;
 }
 
 #scene1 #learnmore{
   position: absolute;
-  bottom: 31px;
+  bottom: 29px;
   right: 7px;
   font-size: 10px;
   background: white;
@@ -197,7 +196,6 @@ sup{
   padding-top: 3px;
   padding-left: 5px;
   padding-right: 5px;
-
 }
 
 #scene1 #body{
@@ -207,3 +205,4 @@ sup{
   left: 8px;
     font-weight: 300;
 }
+

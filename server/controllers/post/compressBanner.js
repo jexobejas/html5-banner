@@ -1,5 +1,6 @@
 const _ = require('underscore');
 const fs = require('fs');
+const zlib = require('zlib');
 const archiver = require('archiver');
 const config = require('./../../config/config');
 const helper = require('./../../helpers/helpers');
@@ -45,8 +46,16 @@ var controller = function(params, res) {
 	archive.finalize();
 
 	var zipfile = fs.readFileSync(temp_banner);
-	console.log(Buffer.from(zipfile).toString('base64'));
-	var encoded = 'data:application/zip;base64,' + Buffer.from(zipfile).toString('base64');
+	var buffer = new Buffer(zipfile);
+	var encoded = null;
+
+	zlib.unzip(buffer.toString('base64'), function(err, buffer) {
+		if (!err) {
+			encoded = 'data:application/zip;base64,' + buffer.toString('base64');
+		} else {
+		// handle error
+		}
+	});
 
 	res.send(helper.sendStatus('success', encoded)); 
 };

@@ -178,10 +178,10 @@ sup{
   font-weight: bold;
   position: absolute;
   width: 100%;
-  text-indent: 22px;
-  padding: 11px 0;
+  padding: 11px 22px;
   top: 495px;
   color: #fff;
+  box-sizing: border-box;
 }
 
 #scene1 #learnmore{
