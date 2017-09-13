@@ -13,7 +13,7 @@ body:hover {
     text-align: center;
     margin-top: 50px;
     position: absolute;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 700;
     width: 300px;
     left: 0;
@@ -51,7 +51,7 @@ body:hover {
 
 #super-5 {
     margin-top: 0;
-    font-size: 22px;
+    font-size: 19px;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -13,7 +13,7 @@ body:hover {
     text-align: center;
     margin-top: 50px;
     position: absolute;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 700;
     width: 300px;
 }
@@ -35,13 +35,13 @@ body:hover {
 }
 
 .small {
-    font-size: 14px;
+    font-size: 11px;
 }
 
 #super-5 {
     margin-top: 30px;
     opacity: 0;
-    font-size: 22px;
+    font-size: 19px;
 }
 
 #super-6 {

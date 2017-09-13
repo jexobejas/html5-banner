@@ -26,13 +26,11 @@ router.post('/bannerPreview', (req, res) => {
 	controller(params, res);
 });
 
-/* POST compress banner. */
-router.post('/compressBanner', (req, res) => {
-	var params = req.body;
+/* GET compress banner. */
+router.get('/compressBanner/:client_code/:project_code/:banner_name', (req, res) => {
+	var controller = helper.getController('compressBanner', 'get');
 
-	var controller = helper.getController('compressBanner', 'post');
-
-	controller(params, res);
+	controller(req, res);
 });
 
 module.exports = router;

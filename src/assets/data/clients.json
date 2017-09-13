@@ -7,7 +7,7 @@
 			"code": "spring_banners",
 			"banners": [
 				{
-					"lang": ["en", "fr"],
+					"lang": "en",
 					"name": "en_garbage_300x250",
 					"width": "300",
 					"height": "250"
@@ -25,37 +25,37 @@
 			"code": "acaf",
 			"banners": [
 				{
-					"lang": ["en", "fr"],
+					"lang": "en",
 					"name": "en_seek_300x250",
 					"width": "300",
 					"height": "250"
 				},
 				{
-					"lang": ["en", "fr"],
+					"lang": "en",
 					"name": "en_seek_300x600",
 					"width": "300",
 					"height": "600"
 				},
 				{
-					"lang": ["en", "fr"],
+					"lang": "en",
 					"name": "en_seek_728x90",
 					"width": "728x90",
 					"height": "90"
 				},
 				{
-					"lang": ["en", "fr"],
+					"lang": "en",
 					"name": "en_demand_300x250",
 					"width": "300",
 					"height": "250"
 				},
 				{
-					"lang": ["en", "fr"],
+					"lang": "en",
 					"name": "en_demand_300x600",
 					"width": "300",
 					"height": "600"
 				},
 				{
-					"lang": ["en", "fr"],
+					"lang": "en",
 					"name": "en_demand_728x90",
 					"width": "728x90",
 					"height": "90"
@@ -109,50 +109,98 @@
 			"code": "tiguan2018",
 			"banners": [
 				{
-					"lang": ["en", "fr"],
-					"name": "3rd_row_seat_bigbox_300x250",
+					"lang": "en",
+					"name": "en_3rd_row_seat_bigbox_300x250",
 					"width": "300",
 					"height": "250"
 				},
 				{
-					"lang": ["en", "fr"],
-					"name": "3rd_row_seat_bigbox_320x50",
+					"lang": "en",
+					"name": "en_3rd_row_seat_bigbox_320x50",
 					"width": "320",
 					"height": "50"
 				},
 				{
-					"lang": ["en", "fr"],
-					"name": "3rd_row_seat_bigbox_300x600",
+					"lang": "en",
+					"name": "en_3rd_row_seat_bigbox_300x600",
 					"width": "300",
 					"height": "600"
 				},
 				{
-					"lang": ["en", "fr"],
-					"name": "3rd_row_seat_bigbox_728x90",
+					"lang": "en",
+					"name": "en_3rd_row_seat_bigbox_728x90",
 					"width": "728",
 					"height": "90"
 				},
 				{
-					"lang": ["en", "fr"],
-					"name": "cargo_space_bigbox_300x250",
+					"lang": "en",
+					"name": "en_cargo_space_bigbox_300x250",
 					"width": "300",
 					"height": "250"
 				},
 				{
-					"lang": ["en", "fr"],
-					"name": "cargo_space_bigbox_320x50",
+					"lang": "en",
+					"name": "en_cargo_space_bigbox_320x50",
 					"width": "320",
 					"height": "50"
 				},
 				{
-					"lang": ["en", "fr"],
-					"name": "cargo_space_bigbox_300x600",
+					"lang": "en",
+					"name": "en_cargo_space_bigbox_300x600",
 					"width": "300",
 					"height": "600"
 				},
 				{
-					"lang": ["en", "fr"],
-					"name": "cargo_space_bigbox_728x90",
+					"lang": "en",
+					"name": "en_cargo_space_bigbox_728x90",
+					"width": "728",
+					"height": "90"
+				},
+				{
+					"lang": "fr",
+					"name": "fr_3rd_row_seat_bigbox_300x250",
+					"width": "300",
+					"height": "250"
+				},
+				{
+					"lang": "fr",
+					"name": "fr_3rd_row_seat_bigbox_320x50",
+					"width": "320",
+					"height": "50"
+				},
+				{
+					"lang": "fr",
+					"name": "fr_3rd_row_seat_bigbox_300x600",
+					"width": "300",
+					"height": "600"
+				},
+				{
+					"lang": "fr",
+					"name": "fr_3rd_row_seat_bigbox_728x90",
+					"width": "728",
+					"height": "90"
+				},
+				{
+					"lang": "fr",
+					"name": "fr_cargo_space_bigbox_300x250",
+					"width": "300",
+					"height": "250"
+				},
+				{
+					"lang": "fr",
+					"name": "fr_cargo_space_bigbox_320x50",
+					"width": "320",
+					"height": "50"
+				},
+				{
+					"lang": "fr",
+					"name": "fr_cargo_space_bigbox_300x600",
+					"width": "300",
+					"height": "600"
+				},
+				{
+					"lang": "fr",
+					"name": "fr_cargo_space_bigbox_728x90",
 					"width": "728",
 					"height": "90"
 				}

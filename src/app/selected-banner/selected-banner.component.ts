@@ -98,15 +98,6 @@ export class SelectedBannerComponent implements OnInit {
 		var project_code = project.code;
 		var banner_name = banner.name;
 
-		this._bannersService
-			.getCompressBanner(client_code, project_code, banner_name)
-			.subscribe((result) =>  {
-				var a = document.createElement('a');
-				a.href = result.data;
-				a.download = banner_name;
-				document.body.appendChild(a);
-				a.click();
-				a.remove();
-			});
+		this._bannersService.getCompressBanner(client_code, project_code, banner_name);
 	}
 }
