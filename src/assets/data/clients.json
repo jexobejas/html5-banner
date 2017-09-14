@@ -110,97 +110,97 @@
 			"banners": [
 				{
 					"lang": "en",
-					"name": "en_3rd_row_seat_bigbox_300x250",
+					"name": "en_3rd_row_seat_300x250",
 					"width": "300",
 					"height": "250"
 				},
 				{
 					"lang": "en",
-					"name": "en_3rd_row_seat_bigbox_320x50",
+					"name": "en_3rd_row_seat_320x50",
 					"width": "320",
 					"height": "50"
 				},
 				{
 					"lang": "en",
-					"name": "en_3rd_row_seat_bigbox_300x600",
+					"name": "en_3rd_row_seat_300x600",
 					"width": "300",
 					"height": "600"
 				},
 				{
 					"lang": "en",
-					"name": "en_3rd_row_seat_bigbox_728x90",
+					"name": "en_3rd_row_seat_728x90",
 					"width": "728",
 					"height": "90"
 				},
 				{
 					"lang": "en",
-					"name": "en_cargo_space_bigbox_300x250",
+					"name": "en_cargo_space_300x250",
 					"width": "300",
 					"height": "250"
 				},
 				{
 					"lang": "en",
-					"name": "en_cargo_space_bigbox_320x50",
+					"name": "en_cargo_space_320x50",
 					"width": "320",
 					"height": "50"
 				},
 				{
 					"lang": "en",
-					"name": "en_cargo_space_bigbox_300x600",
+					"name": "en_cargo_space_300x600",
 					"width": "300",
 					"height": "600"
 				},
 				{
 					"lang": "en",
-					"name": "en_cargo_space_bigbox_728x90",
+					"name": "en_cargo_space_728x90",
 					"width": "728",
 					"height": "90"
 				},
 				{
 					"lang": "fr",
-					"name": "fr_3rd_row_seat_bigbox_300x250",
+					"name": "fr_3rd_row_seat_300x250",
 					"width": "300",
 					"height": "250"
 				},
 				{
 					"lang": "fr",
-					"name": "fr_3rd_row_seat_bigbox_320x50",
+					"name": "fr_3rd_row_seat_320x50",
 					"width": "320",
 					"height": "50"
 				},
 				{
 					"lang": "fr",
-					"name": "fr_3rd_row_seat_bigbox_300x600",
+					"name": "fr_3rd_row_seat_300x600",
 					"width": "300",
 					"height": "600"
 				},
 				{
 					"lang": "fr",
-					"name": "fr_3rd_row_seat_bigbox_728x90",
+					"name": "fr_3rd_row_seat_728x90",
 					"width": "728",
 					"height": "90"
 				},
 				{
 					"lang": "fr",
-					"name": "fr_cargo_space_bigbox_300x250",
+					"name": "fr_cargo_space_300x250",
 					"width": "300",
 					"height": "250"
 				},
 				{
 					"lang": "fr",
-					"name": "fr_cargo_space_bigbox_320x50",
+					"name": "fr_cargo_space_320x50",
 					"width": "320",
 					"height": "50"
 				},
 				{
 					"lang": "fr",
-					"name": "fr_cargo_space_bigbox_300x600",
+					"name": "fr_cargo_space_300x600",
 					"width": "300",
 					"height": "600"
 				},
 				{
 					"lang": "fr",
-					"name": "fr_cargo_space_bigbox_728x90",
+					"name": "fr_cargo_space_728x90",
 					"width": "728",
 					"height": "90"
 				}
